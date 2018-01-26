@@ -1,0 +1,21 @@
+Source: printer-driver-zjiang
+Section: text
+Priority: optional
+Maintainer: Christian Beier <cb@shoutrlabs.com>
+Build-Depends: debhelper (>= 9),
+ libcups2-dev,
+ libcupsimage2-dev,
+ cups-client,
+Vcs-Git: https://github.com/shoutrlabs/printer-driver-zjiang.git
+Vcs-Browser: https://github.com/shoutrlabs/printer-driver-zjiang
+Standards-Version: 3.9.8
+
+Package: printer-driver-zjiang
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Recommends: usb-modeswitch (>= 1.2.5+repack0-2~)
+Description: printer driver for Zjiang printers
+ CUPS filter driver for various Zjiang receipt printers: ZJ-58.
+ .
+ This package contains the CUPS filter driver and the PPDs for the
+ supported receipt printers.
